@@ -41,6 +41,7 @@ This project is a simple Python-based firewall/Network Dectection System built u
 
 ### Example Output
 Once you run the firewall, you’ll see output in the terminal showing allowed and blocked traffic.
+Refer here for example: [EXAMPLE OUTPUT](Python-Firewall-Detection/loggingfirewall.png
 
 
 ### Customization
