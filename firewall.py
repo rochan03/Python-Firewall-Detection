@@ -18,11 +18,17 @@ def firewall():
     def log_to_terminal(message):
         print(message)
 
-
     # function to check traffic in each packet
     def check_traffic(packet):
         if packet.haslayer(IP):
             source_ip = packet[IP].src
+            
+            
+            #Uncomment if you added allowed IPS on line 9
+            #if source_ip in blocked_ips:
+                #log_to_terminal(f"{source_ip} is blocked. Not Allowed")
+                #return
+            
 
             #check if the packet is TCP OR UDP
             if packet.haslayer(TCP) or packet.haslayer(UDP):
