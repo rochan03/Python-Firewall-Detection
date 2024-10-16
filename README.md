@@ -1,7 +1,7 @@
 # Python Scapy Firewall
 
 ## Project Overview
-This project is a simple Python-based firewall built using Scapy to monitor and filter network traffic based on IPs and ports.
+This project is a simple Python-based firewall built using the Scapy library to monitor and filter network traffic based on IPs and ports.
 
 ## Features
 - Monitor incoming network traffic using Scapy.
@@ -11,7 +11,7 @@ This project is a simple Python-based firewall built using Scapy to monitor and 
 
 ## Technologies
 - Python 3.x
-- Scapy (a powerful Python-based interactive packet manipulation program)
+- Scapy (Python based interactive packet manipulation program)
 
 ## Setup Instructions
 
