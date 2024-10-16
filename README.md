@@ -40,3 +40,11 @@ This project is a simple Python-based firewall built using Scapy to monitor and 
 ### Example Output
 Once you run the firewall, you’ll see output in the terminal showing allowed and blocked traffic.
 
+
+### Customization
+
+#### Modify Allowed Ports
+You can customize which ports are allowed by modifying the `allowed_ports` list in `firewall.py`.
+
+```python
+allowed_ports = [80, 445, 5353]  # Add more ports as needed
