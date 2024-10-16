@@ -11,7 +11,6 @@ def firewall():
     #This could be changed in your liking
     blocked_ips = ['192.168.0.216']
 
-
     #List of blocked Ports - you can change this
     allowed_ports = [80, 445, 5353]
 
@@ -23,13 +22,11 @@ def firewall():
         if packet.haslayer(IP):
             source_ip = packet[IP].src
             
-            
             #Uncomment if you added allowed IPS on line 9
             #if source_ip in blocked_ips:
                 #log_to_terminal(f"{source_ip} is blocked. Not Allowed")
                 #return
             
-
             #check if the packet is TCP OR UDP
             if packet.haslayer(TCP) or packet.haslayer(UDP):
                 destination_port = packet[TCP].dport if packet.haslayer(TCP) else packet[UDP].dport
@@ -42,7 +39,6 @@ def firewall():
 
     #This captures packets and applies the check_traffic function
     sniff(prn = check_traffic, filter = "ip", store = 0)
-
 
 if __name__ == "__main__":
     firewall()
