@@ -9,9 +9,10 @@ This project is a simple Python-based firewall built using the Scapy library to 
 - Allow all IP addresses (no IP filtering), but log and filter traffic based on allowed ports.
 - Real-time logging of both blocked and allowed traffic.
 
-## Technologies
+## Technologies used
 - Python 3.x
 - Scapy (Python based interactive packet manipulation program)
+- Kali Linux OS
 
 ## Setup Instructions
 
